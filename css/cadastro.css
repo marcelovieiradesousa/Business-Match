@@ -52,7 +52,7 @@ nav{
     transform: translateX(-100rem);
     animation: slideIn .5s forwards;
 }
-.brand span{
+span{
     color: crimson;
 }
 
@@ -132,7 +132,8 @@ h2{
     color:#fff;
     margin: 30px;
     padding: 15px;
-    text-shadow: blue ;
+    font-size: 3rem;
+    font-weight: 300;
 
 }
 
@@ -143,7 +144,8 @@ h2{
     height: 750px;
     margin: 5px auto 0;
 }
- .container .esquerdo {
+ .container .esquerdo,
+ .container .direito{
     position: relative;
     width: 49%;
     height: 750px;
@@ -152,7 +154,8 @@ h2{
     background: #000;
     display: inline-block;
 }
-.container .esquerdo:before{
+.container .esquerdo:before,
+.container .direito:before{
     content: "";
     position: absolute;
     top: 10px;
@@ -166,11 +169,13 @@ h2{
     opacity: 0;
     z-index: 1;
 }
-.container .esquerdo:hover:before{
+.container .esquerdo:hover:before,
+.container .direito:hover:before{
     transform: scaleX(1);
     opacity: 1;
 }
-.container .esquerdo:after{
+.container .esquerdo:after,
+.container .direito:after{
     content: "";
     position: absolute;
     top: 10px;
@@ -184,23 +189,27 @@ h2{
     opacity: 0;
     z-index: 1;
 }
-.container .esquerdo:hover:after{
+.container .esquerdo:hover:after,
+.container .direito:hover:after{
     transform: scaleY(1);
     opacity: 1;
 }
-.container .esquerdo .imgBox img{
+.container .esquerdo .imgBox img,
+.container .direito .imgBox img{
     position: relative;
     width: 100%;
     height: 750px;
     transition: 0.5s;
 
 }
-.container .esquerdo:hover .imgBox img{
+.container .esquerdo:hover .imgBox img,
+.container .direito:hover .imgBox img{
     opacity: .2;
     transform: scale(1.2);
     background-repeat: no-repeat;
 }
-.container .esquerdo .content{
+.container .esquerdo .content,
+.container .direito .content{
     position: absolute;
     width: 100%;
     top: 50%;
@@ -209,7 +218,8 @@ h2{
     padding: 20px;
     
 }
-.container .esquerdo .content h2{
+.container .esquerdo .content h2,
+.container .direito .content h2{
     margin: 0 0 10px;
     padding: 0;
     color: #fff;
@@ -218,8 +228,13 @@ h2{
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.container .esquerdo .content p{
+.container .esquerdo .content p,
+.container .direito .content p,
+.container .esquerdo .content button,
+.container .direito .content button{
     margin: 0;
     padding: 0;
     color: #fff;
@@ -230,9 +245,54 @@ h2{
     text-align: center;
 }
 .container .esquerdo:hover .content h2,
-.container .esquerdo:hover .content p{
+.container .esquerdo:hover .content p,
+.container .direito:hover .content h2,
+.container .direito:hover .content p{
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
     transition-delay: 0.2s;
+}
+.container .esquerdo .content button{
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.container .direito .content button{
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #d49c22;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.container .esquerdo:hover .content button,
+.container .direito:hover .content button{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.container .esquerdo .content button:hover{
+    background: #2ecc71;
+    transition-delay: 0.1s;
+}
+.container .direito .content button:hover{
+    background: #d49c22;
+    transition-delay: 0.1s;
 }

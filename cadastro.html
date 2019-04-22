@@ -1,58 +1,55 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Level Pro</title>
 </head>
+
 <body>
-    <div id="form">
-    <form name="pessoa" action="cadastro.php" method="POST">
-    <div>
-    <p id="p-name">Nome:</p>
-    <input id="nome" name="nome"type="text" autofocus required>
-    </div>
+    
+    <header>
+        <div class="container-header">
+            <nav>
+                <h1 class="brand"><a href="index.html">Level <span>Pro</span></a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastros</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <h2 class="frase">Cadastre-se para obter serviços da Level <span>Pro</span></h2>
+        </div>
+    </header>
+    <h2>Escolha seu <span>caminho</span>... </h2>
+    <div class="container">
+        <div class="esquerdo">
+            <div class="imgBox">
+                <img src="img/pessoa2.png" alt="Imagem de apresentação Pessoa">
+            </div>
+            <div class="content">
+                <h2>Pessoa</h2>
+                <p>Obtenha seu perfil profissional assegurado com a nossa empresa através de um prefil totalmente personlizável e atrativo. E deixe que as nós fazemos o resto para que sua carreira suba.</p>
+                <a href="cadastro-pessoa.html"><button>Cadastrar</button></a>            </div>
 
-    <div>
-    <p id="p-email">CPF:</p>
-    <input id="cpf" name="cpf" type="text" maxlength="11"  size="9" required>
-    </div>
-
-    <div>
-    <p id="p-email">Email:</p>
-    <input id="name" name="email" type="email" size="50"required>
-    </div>
-
-    <div>
-    <p id="p-number">Telefone:</p>
-    <input id="number" name="telefone" type="text" required maxlength="11">
-    </div>
-
-    <div>
-    <p id="p-gener">Sexo:</p>
-    <input name="sexo" type="radio" value="male" checked>Homem <br>
-    <input name="sexo" type="radio" value="female">Mulher <br>
-    <input name="sexo" type="radio" value="other">Outros
-    </div>
-
-
-    <div>
-    <p>Data de Nascimento</p>
-    <input type='text' name='dia' size='1' maxlength='2'>
-	<input type='text' name='mes' size='1' maxlength='2'>
-    <input type='text' name='ano' size='4' maxlength='4'>
-    </div>
-
-    <div>
-    <p id="p-senha">Senha:</p>
-    <input id="senha" name="senha" type="password">
-    <div>
-       <br><input id="butao" type="submit" name="cadastro" value="Enviar">
-        <input id="limpar" type="reset" name="limpar" value="Limpar">
-    </div>
-    </div>
-    </form>
+        </div>
+        <div class="direito">
+                <div class="imgBox">
+                    <img src="img/empresa1.png  " alt="Imagem de apresentação Empresa">
+                </div>
+                <div class="content">
+                    <h2>Empresa</h2>
+                    <p>Contrate os melhores profissionais para sua vagas. E lucre o máximo com o que há de mais funcional no mercado de trabalho atual.</p>
+                    <a href="cadastro-empresa.html"><button>Cadastrar</button></a>
+                </div>
+    
+            </div>
+        
     </div>
 </body>
+
 </html>
