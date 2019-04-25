@@ -1,4 +1,8 @@
 <?php
+$host = "localhost";
+$database = "bm";
+$usuario = "root";
+$senha = "";
 $n=$_POST["nome"];
 $c=$_POST["cpf"];
 $e=$_POST["email"];
@@ -8,9 +12,10 @@ $d=$_POST["dia"];
 $m=$_POST["mes"];
 $a=$_POST["ano"];
 $i="insert into pessoa (cpf, nome, email, datanasc, telefone, sexo) values ('$c', $n', '$e', '$a/$m/$d', '$t', '$s')";
-$conexao=mysql_connect("localhost","root","") or die
-("erro ao conectar ao mysql");
-$banco=mysql_select_db("bm",$conexao) or die
-("erro de conex&atildeo ao banco de dados");
+
+$conexao = mysql_connect ($host, $usuario, $senha) or trigger_error(mysql_error(), E_USER_ERROR);
 mysql_query($i,$conexao) or die ("erro na inser&ccedil&atildeo de dados");
-?> 
+mysql_select_db($database, $conexao);
+
+mysql_set_charset(ütf8);
+?>
