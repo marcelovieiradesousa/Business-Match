@@ -1,4 +1,5 @@
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="simple-form">
-    <form id="cadastro" name="pessoa" action="cadastro.php" method="POST">
-        <h1>CADASTRO</h1>
-    <div id="fonte">
-    <p>Nome:</p>
-    <input id="button" name="nome"type="text" autofocus required>
-    </div>
+    <div id="form">
+        <form class="box" name="pessoa" action="cadastro-pessoa.php" method="POST">
+            <div>
+                <h1>CADASTRO</h1>
+                <p id="p-name">Nome:</p>
+                <input id="nome" name="nome" type="text" autofocus required>
+            </div>
 
-    <div id="fonte"> 
-    <p>CPF:</p>
-    <input  id="button" name="cpf" type="text" maxlength="11"  size="9" required>
-    </div>
+            <div>
+                <p id="p-email">CPF:</p>
+                <input id="cpf" name="cpf" type="text" maxlength="11" size="9" required>
+            </div>
 
-    <div id="fonte">
-    <p>Email:</p>
-    <input id="button" name="email" type="email" size="25"required>
-    </div>
+            <div>
+                <p id="p-email">Email:</p>
+                <input id="email" name="email" type="email" size="25" required>
+            </div>
 
-    <div id="fonte">
-    <p>Telefone:</p>
-    <input id="button" name="telefone" type="text" required maxlength="11">
-    </div>
+            <div>
+                <p id="p-number">Telefone:</p>
+                <input id="number" name="telefone" type="text" required maxlength="11">
+            </div>
 
-    <div id="fonte">
-    <p>Sexo:</p>
-    <input id="rd" name="sexo" type="radio" value="m" checked>Homem <br>
-    <input id="rd" name="sexo" type="radio" value="f">Mulher <br>
-    <input id="rd" name="sexo" type="radio" value="o">Outros
-    </div>
+            <div>
+                <p id="p-gener">Sexo:</p>
+                <input name="sexo" type="radio" value="m" checked>Homem <br>
+                <input name="sexo" type="radio" value="f">Mulher <br>
+                <input name="sexo" type="radio" value="o">Outros
+            </div>
 
 
-    <div id="fonte">
-    <p>Data de Nascimento</p>
-    <input id="date" type='text' name='dia' size='1' maxlength='2'>
-	<input id="date" type='text' name='mes' size='1' maxlength='2'>
-    <input id="date" type='text' name='ano' size='4' maxlength='4'>
-    </div>
+            <div>
+                <p>Data de Nascimento</p>
+                <input type='text' name='dia' size='1' maxlength='2'>
+                <input type='text' name='mes' size='1' maxlength='2'>
+                <input type='text' name='ano' size='4' maxlength='4'>
+            </div>
 
-    <div>
-    <!-- <p id="p-senha">Senha:</p>
+            <!-- <div>
+                <p>Data de Nascimento:</p>
+                <input type="number" name="nasc" id="" value="nome">
+            </div>
+            <div> -->
+            <!-- <p id="p-senha">Senha:</p>
     <input id="senha" name="senha" type="password"> -->
-    <div>
-       <br><input id="but" type="submit" name="cadastro" value="Enviar">
-        <input id="but" type="reset" name="limpar" value="Limpar">
-    </div>
+            <div>
+                <br><input id="butao" type="submit" name="cadastro" value="Enviar">
+                <input id="limpar" type="reset" name="limpar" value="Limpar">
+            </div>
     </div>
     </form>
     </div>
 </body>
+
 </html>
