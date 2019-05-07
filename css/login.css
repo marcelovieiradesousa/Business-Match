@@ -1,0 +1,36 @@
+body {
+    background-image: url(../img/aurora.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.simple-form{
+    text-align: center;
+    margin: 100px 900px;
+    font-family: sans-serif;
+    background-image: url(../img/giff.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#Login{
+    width: 100%;
+    background-color:white;
+    opacity: 0.8;
+    padding: 100px 0px;
+    border: solid greenyellow;
+}
+
+#button {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #505255;
+}
+#but{
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: solid #505255;
+}
