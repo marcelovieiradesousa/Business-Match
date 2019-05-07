@@ -1,13 +1,21 @@
 body {
     background-image: url(../img/empresas.jpg);
-    background-size: 100% 1100px;
+    background-attachment: fixed;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 
 .simple-form {
     text-align: center;
-    margin: 100px 1000px;
+    margin: 100px 800px;
+}
+
+#cadastro {
+    width: 100%;
+    background-color: grey;
+    opacity: 0.8;
+    padding: 50px 0px;
 }
 
 
@@ -16,14 +24,6 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: solid #505255;
-}
-
-
-#cadastro {
-    width: 100%;
-    background-color: grey;
-    opacity: 0.8;
-    padding: 50px 0px;
 }
 
 
