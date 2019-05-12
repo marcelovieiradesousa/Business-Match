@@ -128,11 +128,6 @@ body{
     overflow-x: hidden;
     background-color: #000;
 }
-hr{
-    margin-top: 900px;
-    overflow: hidden;
-    z-index: 1;
-}
 h2{
     text-align: center;
     color: crimson;
@@ -303,16 +298,40 @@ h2{
     transition-delay: 0.1s;
 }
 /*apenas css da pagina sobre*/
-main .somos{
-    color: #eee;
-    text-align: center;
-    color:#fff;
-    margin: 20px;
-    padding: 2px;
-    font-size: 25px;
-    font-weight: 200;
-}
 .somos{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px, 16px, 15px;
+    padding: 150px;
+    font-size: 3rem;
+    background-color:rgb(255, 255, 255);
+    height: 1500px  ;
+}
+.somos h3{
+    color: crimson;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: 0.5s;
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.somos p{
+    color: #000;
+    margin: 0 0 10px;
+    padding: 12px;
+    transition  : 0.1s;   
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.somos i{
+    color: #000;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/* .somos{
     text-transform: uppercase;
     text-align: center;
     color: crimson;
@@ -321,21 +340,66 @@ main .somos{
     font-size: 42px;
     font-weight: 300;
     
+} */
+.acoes{
+    position: absolute;
+    width: 80%;
+    height: 25vh;
+    
 }
-p-1 i{
-text-align: justify;
-position: relative;
-color: #eee;
-top: 600px;
-left: 400px;
-font-size: 80px;
-font-weight: 100;
-margin-right: 20px;
-}
-p-2{
-    color: #eee;
-    font-size: 14px;
-    position: relative;
-    left: 930px;
+#acoes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: crimson;
+    padding: 100px;
+    text-align: center;
+    width: 130%;
+    font-size: 4rem;
+    letter-spacing: 1ch;
+    font-weight: normal;
 }
 
+.mine1{
+    margin: 60px;
+    padding: 15px;
+    min-width: 180vh;
+    height: 40vh;
+    background: linear-gradient(to bottom, rgba(255, 187, 0, 0.473), rgba(255, 0, 0, 0.329)), url(../img/m1.jpg) center no-repeat;
+    background-size: cover; 
+}
+.mine2{
+    position: absolute;
+    margin: 60px;
+    padding: 15px;
+    min-width: 180vh;
+    height: 40vh;
+    background: linear-gradient(to bottom, rgba(255, 187, 0, 0.473), rgba(255, 0, 0, 0.329)), url(../img/m2.jpg) center no-repeat;
+    background-size: cover; 
+}
+.acoes h1{
+    font-size: 2rem;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 130%;
+    font-size: 3rem;
+    letter-spacing: 1ch;
+}
+.acoes h2{
+    font-size: 2rem;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.acoes p{
+    color: #fff;
+    margin: 0 0 10px;
+    padding: 12px;
+    transition  : 0.1s;   
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
