@@ -14,6 +14,10 @@ header{
     background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(../img/bg2.jpg) center no-repeat;
     background-size: cover; 
 }
+h2{
+    text-transform:uppercase;
+    letter-spacing: 15px;
+}
 .container-header{
     max-width: 120rem;
     width: 90%;
