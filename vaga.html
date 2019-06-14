@@ -1,0 +1,308 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Level Pro</title>
+    <style>
+        fieldset {
+            font-family: sans-serif;
+            font-size: 1em;
+            padding: 0.2em;
+            border: 1px solid #CCC;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            display: block;
+
+            xposition: relative;
+            background-color: #FFF;
+            top: 40px;
+            width: 810px;
+            margin: 0 auto;
+            padding: 0;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5),
+                0px 20px 20px rgba(0, 0, 0, 0.5),
+                0px 30px 20px rgba(0, 0, 0, 0.5);
+            font-family: Arial;
+            font-size: 12px;
+            color: #999999;
+            border: 0;
+            border-bottom: 1px solid #00cccc;
+        }
+
+        table tr td {
+            position: relative;
+            background-color: #FFF;
+            xtop: 40px;
+            xwidth: 810px;
+            xmargin: 0 auto;
+            padding: 0;
+            xbox-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5),
+                0px 20px 20px rgba(0, 0, 0, 0.5),
+                0px 30px 20px rgba(0, 0, 0, 0.5);
+            font-family: Arial;
+            font-size: 14px;
+            color: #999999;
+            border: 0;
+            xborder-bottom: 1px solid #00cccc;
+        }
+
+        p {
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #003366;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 14px;
+            padding: 5px;
+            background-color: #E3E3E3;
+            color: #4C4C4C;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULÁRIO</h1>
+    <h2>Preencha com os informações sobre a Vaga</h2>
+
+
+    <fieldset>
+        <legend>Dados</legend>
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    Nome da Empresa:
+                </td>
+                <td align="left">
+                    <input type="text" size="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contato:
+                </td>
+                <td align="left">
+                    <input type="text" name="contato" size="80" maxlength="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Atividade principal:
+                </td>
+                <td align="left">
+                    <input type="text" name="at" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CNPJ:
+                </td>
+                <td align="left">
+                    <input type="text" size="80" maxlength="80">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Telefone:
+                </td>
+                <td align="left">
+                    <input type="text" size="2" maxlength="2"> - <input type="text" size="8" maxlength="8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Celular:
+                </td>
+                <td align="left">
+                    <input type="text" size="2" maxlength="2"> - <input type="text" size="9" maxlength="9">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td align="left">
+                    <input type="text" name="rg" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Endereço:
+                </td>
+                <td align="left">
+                    <input type="text" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rua">Rua:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="rua" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="numero">Número:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="numero" size="6">
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bairro">Bairro: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="bairro" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estado">Estado:</label>
+                </td>
+                <td align="left">
+                    <select name="estado">
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="se">Sergipe</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cidade">Cidade: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cidade" size="80" maxlength="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cep">CEP: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3"
+                        maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Habilidades
+                </td>
+                <td align="left">
+                    <select name="Skills">
+                        <option value="">---</option>
+                        <option value="1">Junior IONIC</option>
+                        <option value="2">Plenor IONIC</option>
+                        <option value="3">Senior IONIC</option>
+                        <option value="4">Junior JavaScript</option>
+                        <option value="5">Plenor JavaScript</option>
+                        <option value="6">Senior JavaScript</option>
+                        <option value="7">Junior MySQL</option>
+                        <option value="8">Plenor MySQL</option>
+                        <option value="9">Senior MySQL</option>
+                        <option value="10">Junior Python</option>
+                        <option value="11">Plenor Python</option>
+                        <option value="12">Senior Python</option>
+                        <option value="13">Junior CSS3</option>
+                        <option value="14">Plenor CSS3</option>
+                        <option value="15">Senior CSS3</option>
+                        <option value="16">Analista de Segurança</option>
+                    </select>
+                    <select name="Skills">
+                        <option value="">---</option>
+                        <option value="1">Junior IONIC</option>
+                        <option value="2">Plenor IONIC</option>
+                        <option value="3">Senior IONIC</option>
+                        <option value="4">Junior JavaScript</option>
+                        <option value="5">Plenor JavaScript</option>
+                        <option value="6">Senior JavaScript</option>
+                        <option value="7">Junior MySQL</option>
+                        <option value="8">Plenor MySQL</option>
+                        <option value="9">Senior MySQL</option>
+                        <option value="10">Junior Python</option>
+                        <option value="11">Plenor Python</option>
+                        <option value="12">Senior Python</option>
+                        <option value="13">Junior CSS3</option>
+                        <option value="14">Plenor CSS3</option>
+                        <option value="15">Senior CSS3</option>
+                        <option value="16">Analista de Segurança</option>
+                    </select>
+                    <select name="Skills">
+                        <option value="">---</option>
+                        <option value="1">Junior IONIC</option>
+                        <option value="2">Plenor IONIC</option>
+                        <option value="3">Senior IONIC</option>
+                        <option value="4">Junior JavaScript</option>
+                        <option value="5">Plenor JavaScript</option>
+                        <option value="6">Senior JavaScript</option>
+                        <option value="7">Junior MySQL</option>
+                        <option value="8">Plenor MySQL</option>
+                        <option value="9">Senior MySQL</option>
+                        <option value="10">Junior Python</option>
+                        <option value="11">Plenor Python</option>
+                        <option value="12">Senior Python</option>
+                        <option value="13">Junior CSS3</option>
+                        <option value="14">Plenor CSS3</option>
+                        <option value="15">Senior CSS3</option>
+                        <option value="16">Analista de Segurança</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mensagem:
+                </td>
+                <td align="left">
+                    <textarea rows="6" style="width: 38em" id="mensagem" name="mensagem"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" name="submit">Enviar</button>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+    </fieldset>
+</body>
+
+</html>
